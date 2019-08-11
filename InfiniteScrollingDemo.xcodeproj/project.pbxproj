@@ -16,6 +16,7 @@
 		D625D2762300A13300713E13 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D625D2742300A13200713E13 /* LoadingCell.xib */; };
 		D625D2792300A14300713E13 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625D2772300A14300713E13 /* TestCell.swift */; };
 		D625D27A2300A14300713E13 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D625D2782300A14300713E13 /* TestCell.xib */; };
+		D625D27D2300B1A800713E13 /* InfinitScroll2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625D27C2300B1A800713E13 /* InfinitScroll2Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D625D2742300A13200713E13 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		D625D2772300A14300713E13 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		D625D2782300A14300713E13 /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
+		D625D27C2300B1A800713E13 /* InfinitScroll2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitScroll2Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +64,27 @@
 		D625D2582300956100713E13 /* InfiniteScrollingDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D625D2592300956100713E13 /* AppDelegate.swift */,
-				D625D25B2300956100713E13 /* InfiniteScroll1Controller.swift */,
 				D625D25D2300956100713E13 /* Main.storyboard */,
-				D625D2602300956500713E13 /* Assets.xcassets */,
-				D625D2622300956500713E13 /* LaunchScreen.storyboard */,
-				D625D2652300956500713E13 /* Info.plist */,
+				D625D25B2300956100713E13 /* InfiniteScroll1Controller.swift */,
+				D625D27C2300B1A800713E13 /* InfinitScroll2Controller.swift */,
 				D625D2732300A13200713E13 /* LoadingCell.swift */,
 				D625D2742300A13200713E13 /* LoadingCell.xib */,
 				D625D2772300A14300713E13 /* TestCell.swift */,
 				D625D2782300A14300713E13 /* TestCell.xib */,
+				D625D27B2300B0C400713E13 /* Supporting Files */,
+				D625D2652300956500713E13 /* Info.plist */,
 			);
 			path = InfiniteScrollingDemo;
+			sourceTree = "<group>";
+		};
+		D625D27B2300B0C400713E13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D625D2592300956100713E13 /* AppDelegate.swift */,
+				D625D2602300956500713E13 /* Assets.xcassets */,
+				D625D2622300956500713E13 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			files = (
 				D625D2752300A13300713E13 /* LoadingCell.swift in Sources */,
 				D625D2792300A14300713E13 /* TestCell.swift in Sources */,
+				D625D27D2300B1A800713E13 /* InfinitScroll2Controller.swift in Sources */,
 				D625D25C2300956100713E13 /* InfiniteScroll1Controller.swift in Sources */,
 				D625D25A2300956100713E13 /* AppDelegate.swift in Sources */,
 			);

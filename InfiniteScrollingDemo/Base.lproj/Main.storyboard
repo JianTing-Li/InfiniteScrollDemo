@@ -13,14 +13,29 @@
         <!--Method 2-->
         <scene sceneID="scA-1Q-amL">
             <objects>
-                <viewController id="CN9-Zb-nWD" sceneMemberID="viewController">
+                <viewController id="CN9-Zb-nWD" customClass="InfinitScroll2Controller" customModule="InfiniteScrollingDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vL4-BP-y2l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cu6-NO-CGI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41568627450000001" green="0.53725490200000003" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cu6-NO-CGI" firstAttribute="leading" secondItem="Ftf-Zl-GUM" secondAttribute="leading" id="BbJ-K4-Oag"/>
+                            <constraint firstItem="Ftf-Zl-GUM" firstAttribute="bottom" secondItem="Cu6-NO-CGI" secondAttribute="bottom" id="U3R-mu-dTO"/>
+                            <constraint firstItem="Cu6-NO-CGI" firstAttribute="top" secondItem="Ftf-Zl-GUM" secondAttribute="top" id="cOZ-JP-4CE"/>
+                            <constraint firstItem="Ftf-Zl-GUM" firstAttribute="trailing" secondItem="Cu6-NO-CGI" secondAttribute="trailing" id="cxk-fJ-QdQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ftf-Zl-GUM"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Method 2" id="Peu-iG-B5a"/>
+                    <connections>
+                        <outlet property="tableView" destination="Cu6-NO-CGI" id="gvU-lK-uAu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cI-VH-cDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,8 +51,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="CN9-Zb-nWD" kind="relationship" relationship="viewControllers" id="Ct0-iD-Zmd"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="v4j-ot-1i8"/>
+                        <segue destination="CN9-Zb-nWD" kind="relationship" relationship="viewControllers" id="Ct0-iD-Zmd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Egi-uN-IbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,7 +72,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97723214250000001" green="0.39239491939999999" blue="0.41691899729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Emn-7P-VfV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4tI-xn-A9L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Emn-7P-VfV" secondAttribute="bottom" id="JQP-RN-ztk"/>
